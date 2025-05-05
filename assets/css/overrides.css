@@ -1,0 +1,29 @@
+/* Make footer stick to bottom of content is too short and center content vertically in that case */
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* User serif font */
+body,
+input,
+button,
+select,
+textarea,
+.navbar-search .search-query {
+    font-family: serif;
+}
+
+
+/* Give links on the blog post overview page a nice underline effect */
+.link-hr-hover:focus .hr-link-hover,
+.link-hr-hover:hover .hr-link-hover {
+    width: 6rem;
+}
+.hr-link-hover {
+    width: 3rem;
+    text-align: left;
+    transition: all 0.3s ease-out;
+}
