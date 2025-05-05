@@ -470,7 +470,7 @@ The pruning flow is as follows:</p>
   <li>
 <b>Join Pruning:</b> While executing a join, the probe side of a join is subject to <em>join pruning</em>, i.e., removing partitions from the probe side that do not contain join partners based on the collected values from the build side.</li>
   <li>
-<b>Top-K Pruning:</b>Lastly, if a query is a top-k query, i.e., it contains an <code>ORDER BY ... LIMIT</code>, a specialized <em>top-k pruning</em> technique attempts to reduce the number of processed partitions by pushing runtime information about the current top-k heap down to the table scan.</li>
+<b>Top-K Pruning:</b> Lastly, if a query is a top-k query, i.e., it contains an <code>ORDER BY ... LIMIT</code>, a specialized <em>top-k pruning</em> technique attempts to reduce the number of processed partitions by pushing runtime information about the current top-k heap down to the table scan.</li>
 </ol>
 <p>While the first two techniques can be applied during query optimization, the latter two techniques require runtime information about the current state of the query execution.</p>
 
